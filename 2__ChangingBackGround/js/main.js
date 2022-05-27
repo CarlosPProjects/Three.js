@@ -6,9 +6,9 @@ scene.fog = new THREE.Fog(0x000000, 0.1, 6); // ---> You can even add fog by add
 
 //background img
 var loader = new THREE.TextureLoader();
-loader.load('./img/bg.png', texture => {
-    scene.background = texture;
-})
+loader.load("./img/bg.png", (texture) => {
+  scene.background = texture;
+});
 
 // add camera
 var camera = new THREE.PerspectiveCamera(
@@ -19,7 +19,7 @@ var camera = new THREE.PerspectiveCamera(
 );
 
 // renderer
-var renderer = new THREE.WebGL1Renderer();
+var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -27,7 +27,7 @@ document.body.appendChild(renderer.domElement);
 var geometry = new THREE.BoxGeometry();
 var material = new THREE.MeshBasicMaterial({
   color: 0x00ff00,
- //  wireframe: true, // Render geometry as wireframe.
+  //  wireframe: true, // Render geometry as wireframe.
 });
 var cube = new THREE.Mesh(geometry, material);
 

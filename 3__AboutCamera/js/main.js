@@ -24,7 +24,7 @@ var helper = new THREE.CameraHelper(newcamera);
 scene.add(helper);
 
 // -------------RENDER---------------
-var renderer = new THREE.WebGL1Renderer();
+var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -45,15 +45,15 @@ var i = 0;
 var animate = function () {
   requestAnimationFrame(animate);
 
-    camera.lookAt(newcamera.position);
+  camera.lookAt(newcamera.position);
 
   camera.position.x = Math.cos(i) * 30;
   camera.position.z = Math.sin(i) * 30;
 
   i += 0.01;
 
-//   cube.rotation.x += 0.01;
-//   cube.rotation.y += 0.01;
+  //   cube.rotation.x += 0.01;
+  //   cube.rotation.y += 0.01;
 
   renderer.render(scene, newcamera);
 
