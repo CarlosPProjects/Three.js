@@ -8,3 +8,4 @@ Getting started with Three.js
 - Let's see how to background can be change.
 - Camera, how does it work?.
 - OrbitControls + MouseEvents.
+- Dinamyc resize camera.
