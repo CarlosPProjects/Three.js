@@ -1,4 +1,4 @@
-# 3D Cube - Three.js
+# Three.js | Working on my CUBE.
 
 Getting started with Three.js
 
@@ -6,5 +6,5 @@ Getting started with Three.js
 
 - We create the cube.
 - Let's see how to background can be change.
-- Camera, how does it work?
-- OrbitControls + MouseEvents
+- Camera, how does it work?.
+- OrbitControls + MouseEvents.
