@@ -1,4 +1,5 @@
 import * as THREE from "./three.module.js";
+import { OrbitControls } from "./OrbitControls.js";
 
 // --------------- CREATING SCENE --------------
 var scene = new THREE.Scene();
@@ -26,6 +27,11 @@ var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 camera.position.z = 5;
+
+/**
+ * domElement: The HTML element used for event listeners.
+ */
+var controls = new OrbitControls(camera, renderer.domElement);
 
 // ------------- ADDING LISTENERS -------------
 window.addEventListener("resize", redirect, false);
