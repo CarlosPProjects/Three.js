@@ -34,21 +34,23 @@ camera.position.z = 5;
 var controls = new OrbitControls(camera, renderer.domElement);
 
 // ------------- ADDING LISTENERS -------------
-window.addEventListener("resize", redirect, false);
+window.addEventListener(
+  "resize",
+  () => {
+    // Camera frustum aspect ratio
+    camera.aspect = window.innerWidth / window.innerHeight;
 
-function redirect() {
-  // Camera frustum aspect ratio
-  camera.aspect = window.innerWidth / window.innerHeight;
+    // Every time we change the camera settings, we need to update the projection matrix
+    camera.updateProjectionMatrix();
 
-  // Every time we change the camera settings, we need to update the projection matrix
-  camera.updateProjectionMatrix();
+    // Let's set the new size
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
-  // Let's set the new size
-  renderer.setSize(window.innerWidth, window.innerHeight);
-
-  // At this point we should render again the whole new settings.
-  renderer.render(scene, camera);
-}
+    // At this point we should render again the whole new settings.
+    renderer.render(scene, camera);
+  },
+  false
+);
 
 // ---------------- ANIMATION ----------------
 var animate = function () {
