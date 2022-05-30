@@ -1,4 +1,4 @@
-# Camera - how does it work? | Vue.js
+# Camera - how does it work? | Three.js
 
 - Let's see the whole scene.
 - Let's take the newly created camera view as a helper.
