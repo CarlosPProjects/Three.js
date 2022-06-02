@@ -9,11 +9,11 @@ How can we import '.stl' files?
 
 ## Node.js
 
-`bash npm init -y `
+`npm init -y `
 
 ## Express
 
-`bash npm i express `
+`npm i express `
 
 ## Nodemon
 
@@ -21,4 +21,4 @@ How can we import '.stl' files?
 
 ## package.json
 
-`bash scripts {"start": "nodemon app.js"} `
+`scripts {"start": "nodemon app.js"} `
