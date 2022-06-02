@@ -3,4 +3,5 @@
 Working with STL Loader.
 How can we import '.stl' files?
 
-![halo__img](./public/img/img.png)
+##
+![halo__img](./public/img/halo__img.png)
