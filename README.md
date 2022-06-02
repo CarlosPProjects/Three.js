@@ -9,3 +9,4 @@ Getting started with Three.js
 - Camera, how does it work?.
 - OrbitControls + MouseEvents.
 - Dinamyc resize camera.
+- Working with '.stl' files (STL Loader)
