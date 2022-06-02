@@ -1,4 +1,4 @@
-# Three.js | Working on my CUBE.
+# Three.js | Learning...
 
 Getting started with Three.js
 
