@@ -2,7 +2,7 @@
 
 Getting started with Three.js
 
-## In these folders we are working with a 3D cube
+## In these folders we are learning some basic functionalities of three.js
 
 - We create the cube.
 - Let's see how to background can be change.
@@ -10,3 +10,4 @@ Getting started with Three.js
 - OrbitControls + MouseEvents.
 - Dinamyc resize camera.
 - Working with '.stl' files (STL Loader)
+- Working with '.3mf' files (3MF Loader)
