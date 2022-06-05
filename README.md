@@ -11,3 +11,4 @@ Getting started with Three.js
 - Dinamyc resize camera.
 - Working with '.stl' files (STL Loader)
 - Working with '.3mf' files (3MF Loader)
+- TextureLoader
